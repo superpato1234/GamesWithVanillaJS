@@ -1,0 +1,155 @@
+
+.frame{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.score{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* .score-numbers{
+    
+} */
+.scoret{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+}
+.score-bar{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(237, 26, 26);
+    margin: 10px 0;
+}
+.bar{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(11, 32, 194);
+}
+.game-mode{
+    width: 100%;
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.game-mode button{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(98, 97, 102);
+    padding: 10px 30px;
+}
+.game-mode button:hover{
+    background-color: rgb(182, 182, 182);
+
+}
+.game-mode button:hover img{
+    filter: none;
+}
+.game-mode img{
+    width: 50px;
+    height: 50px;
+    filter: invert();
+}
+.game-mode p{
+    margin: 0;
+    font-weight: bolder;
+}
+.players{
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+.player-one{
+    display: flex;
+    flex-direction: row;
+}
+.selected{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+.default-selected{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.default-selected img{
+    width: 50%;
+}
+.animation{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.container:hover .overlay {
+    width: 100%;
+}
+.option{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.option img{
+    width: 50px;
+    height: 50px;
+}
+.player-two{
+    display: flex;
+    flex-direction: row;
+}
+.option button{
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.player-one button:hover img{
+    animation:rotate-p1 500ms ease-in-out ;
+    animation-iteration-count: infinite;
+}
+.player-two button:hover img{
+    animation:rotate-p2 500ms ease-in-out ;
+    animation-iteration-count: infinite;
+}
+
+.change{
+    left: 0;
+    transition: left 1s cubic-bezier(0, .5, .5, 1);
+}
+@keyframes rotate-p1 {
+    50%{
+        transform: rotateZ(30deg);
+    }
+}
+@keyframes rotate-p2 {
+    50%{
+        transform: rotateZ(30deg);
+    }
+}
+
+@keyframes prueba {
+    50%{
+        transform: scale(.5);
+    }
+}
